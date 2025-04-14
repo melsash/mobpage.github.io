@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Responsive Portfolio</title>
+    <link rel="stylesheet" href="mob.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Jane Doe</h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Mobile menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Web Developer & Designer</h2>
+                    <p>Creating beautiful, responsive websites with a focus on user experience.</p>
+                    <a href="#work" class="btn">View My Work</a>
+                </div>
+                <div class="hero-image">
+                    <img src="images/profile.jpg" alt="Jane Doe profile picture">
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="portfolio">
+            <div class="container">
+                <h2>My Portfolio</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="images/project1.jpg" alt="E-commerce website project">
+                        <h3>E-commerce Site</h3>
+                        <p>Fully responsive online store built with React.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/project2.jpg" alt="Mobile app design project">
+                        <h3>Fitness App</h3>
+                        <p>UI/UX design for a health tracking application.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/project3.jpg" alt="Web application project">
+                        <h3>Task Manager</h3>
+                        <p>Productivity web app with cloud sync.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2023 Jane Doe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="mob.js"></script>
+</body>
+</html>
